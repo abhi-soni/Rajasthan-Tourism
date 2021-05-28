@@ -12,13 +12,14 @@
 <body>
     <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
         <div class="container">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#Navbar">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#NavbarMenu"
+                aria-controls="NavbarMenu" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <a class="navbar-brand mx-auto" href="../index.html">
                 <img src="../assets/images/logo.png" width="150" height="35">
             </a>
-            <div class="collapse navbar-collapse" id="Navbar">
+            <div class="collapse navbar-collapse" id="NavbarMenu">
                 <div class="navbar-nav mx-auto">
                     <li class="nav-item"><a class="nav-link" href="../index.html">Home</a> </li>
                     <li class="nav-item"><a class="nav-link" href="./gallery.html">Gallery</a></li>
@@ -43,19 +44,31 @@
     </div>
     <div class="main_title">
         <h1 class="text-center" style="padding-top: 3%;">Contact Us</h1> <img src="../assets/images/design.png"
-            class="mx-auto d-block" style="padding-bottom: 3%;">
+            class="mx-auto d-block img-fluid" style="padding-bottom: 3%;">
     </div>
     <div class="container mb-4">
-        <div class="row">
-            <div class="col-12 col-md-12">
-                <div class="details text-center">
-                    <h3>You Can Contact Us in Following Ways</h3> <i class="fa fa-3x fa-long-arrow-alt-down"></i>
-                    <p style="margin-top: 3%;">Call Us&nbsp;&nbsp;&nbsp;<i class="fa fa-phone-alt"><a
-                                href="tel:918107156090"> +91 8107156090</a></i></p>
-                    <p>Email Us&nbsp;&nbsp;&nbsp;<i class="fa fa-envelope-open-text"><a
-                                href="mailto:abhishek1600soni@gmail.com"> abhishek1600soni@gmail.com</a></i></p>
-                    <p>Website&nbsp;&nbsp;&nbsp;<i class="fa fa-link"><a href="#" target="_blank">
-                                https://arctech.website</a></i></p>
+        <div class="row text-center">
+            <div class="col-md-3 col-xs-12 contact_style mx-auto">
+                <div class="details">
+                    <i class="fas fa-map-marker-alt fa-2x m-3" style="color: #2f76d8;"></i>
+                    <p class="fw-bold fs-5">Directorate Of Tourism</p>
+                    <p>Paryatan Bhawan, Khasa Kothi Hotel Campus, M.I.Road., Jaipur, Rajasthan 302001</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-12 contact_style mx-auto">
+                <div class="details">
+                    <i class="fas fa-envelope fa-2x m-3" style="color: #2f76d8;"></i>
+                    <p class="fw-bold fs-5">Email Us</p>
+                    <p class="font-monospace"><a href="mailto:cot-dot@rajasthan.gov.in">cot-dot@rajasthan.gov.in</a></p>
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-12 contact_style mx-auto">
+                <div class="details">
+                    <i class="fas fa-phone-alt fa-2x m-3" style="color: #2f76d8;"></i>
+                    <p class="fw-bold fs-5">Call Us</p>
+                    <p class="font-monospace"><a href="tel:01412822800">0141-2822800</a><br>
+                        <a href="tel:01415110593">0141-5110593</a>
+                    </p>
                 </div>
             </div>
         </div>
@@ -97,8 +110,7 @@
     <footer class="p-2 bg-dark text-white-50">
         <div class="text-center"> Copyright &copy; 2021 Rajasthan Tourism | All Rights Reserved </div>
     </footer>
-
-    <script src="../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/popper.min.js"></script>
     <script src="../assets/Bootstrap/js/bootstrap.min.js"></script>
 </body>
 
