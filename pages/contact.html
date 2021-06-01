@@ -27,9 +27,8 @@
                             Us</a></li>
                     <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
                 </div>
-                <div class="d-flex justify-content-center top-btn">
-                    <a href="https://github.com/abhi-soni/Rajasthan-Tourism" target="_blank" class="btn btn-warning">Git
-                        Repository</a>
+                <div class="d-flex justify-content-center  ">
+                    <a href="#QuickInfoModal" data-bs-toggle="modal" class="btn btn-warning">Quick Info</a>
                 </div>
             </div>
         </div>
@@ -72,7 +71,135 @@
                 </div>
             </div>
         </div>
+        <div class="row">
+            <div class="col d-flex justify-content-center">
+                <button class="m-3 btn btn-warning btn-lg" data-bs-toggle="modal" data-bs-target="#ContactFormModal">Or
+                    Fill this Form to Contact Us</button>
+                <div class="modal fade" id="ContactFormModal" data-bs-backdrop="static" data-bs-keyboard="false"
+                    data-bs-focus="true" tabindex="-1" aria-hidden="true" aria-labelledby="ContactFormModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="ContactFormModal">Contact Form</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form method="POST" id="ContactForm">
+                                    <div class="mb-2">
+                                        <label for="ContactName" class="form-label">Name</label>
+                                        <input type="text" class="form-control" id="ContactName"
+                                            placeholder="Please Enter Your Name" required>
+                                    </div>
+                                    <div class="mb-2">
+                                        <label for="ContactEmail" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="ContactEmail"
+                                            placeholder="Please Enter Your Email ID">
+                                    </div>
+                                    <div class="mb-2">
+                                        <label for="ContactMessage" class="form-label">Message</label>
+                                        <textarea class="form-control" id="ContactMessage" rows="3"
+                                            placeholder="Please Enter your message ...." required></textarea>
+                                    </div>
+                                    <div class="d-flex justify-content-end">
+                                        <button type="button" data-bs-dismiss="modal"
+                                            class="btn btn-secondary me-1">Cancel</button>
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <!-- Quick Info Modal -->
+    <div class="container">
+        <div class="modal fade show" id="QuickInfoModal" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="InfoModal" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-scrollable modal-dialog-centered ">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title mx-auto" id="InfoModal">Quick Information about Rajasthan</h3>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-bordered table-striped table-hover table-light table-sm">
+                            <tbody>
+                                <tr>
+                                    <td>Region</td>
+                                    <td>North India</td>
+                                </tr>
+                                <tr>
+                                    <td>Capital</td>
+                                    <td>Jaipur</td>
+                                </tr>
+                                <tr>
+                                    <td>Coordinate</td>
+                                    <td>27.0238° N, 74.2179° E</td>
+                                </tr>
+                                <tr>
+                                    <td>Total Population</td>
+                                    <td>68,548,437 (According to 2011 Census)</td>
+                                </tr>
+                                <tr>
+                                    <td>Geographical Area</td>
+                                    <td>342,239 Square Kilometres</td>
+                                </tr>
+                                <tr>
+                                    <td>Total Districts</td>
+                                    <td>33</td>
+                                </tr>
+                                <tr>
+                                    <td>Religion</td>
+                                    <td>Hindu, Muslim, Christian, Sikh, Buddhist, Jain</td>
+                                </tr>
+                                <tr>
+                                    <td>Major Tribes</td>
+                                    <td>Sahariyas, Minas, Bhils, Gadiya Lohars, Garasias..etc</td>
+                                </tr>
+                                <tr>
+                                    <td>Languages Spoken</td>
+                                    <td>Hindi, English, Marwari, Jaipuri/Dhundhari, Malvi/Malwi, Mewati, Urdu..etc
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>State Animal </td>
+                                    <td>Camel & Chinkara</td>
+                                </tr>
+                                <tr>
+                                    <td>State Flower </td>
+                                    <td>Rohida (Tecomella Undulata)</td>
+                                </tr>
+                                <tr>
+                                    <td>State Bird </td>
+                                    <td>Godawan (Great Indian Bustard)</td>
+                                </tr>
+                                <tr>
+                                    <td>State Tree </td>
+                                    <td>Khejri (Prosopis Cineraria)</td>
+                                </tr>
+                                <tr>
+                                    <td>State Dance </td>
+                                    <td>Ghoomar</td>
+                                </tr>
+                                <tr>
+                                    <td>State Game </td>
+                                    <td>Basketball</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary mx-auto" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!--Footer-->
     <div class="footer">
         <div class="container">
