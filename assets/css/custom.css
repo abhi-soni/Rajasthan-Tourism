@@ -95,7 +95,10 @@ body {
     max-width: 100%;
     height: auto;
 }
-
+.gallery img:hover
+{
+    transform: scale(1.05);
+}
 .gallery div div div p {
     font-weight: 700;
     font-size: 130%;
